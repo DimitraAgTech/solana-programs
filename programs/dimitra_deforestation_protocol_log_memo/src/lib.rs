@@ -1,6 +1,8 @@
 use anchor_lang::prelude::*;
 use anchor_lang::solana_program::pubkey::Pubkey;
 
+use solana_security_txt::security_txt;
+
 // This is your program's public key and it will update
 // automatically when you build the project.
 declare_id!("E22mM2hSBAb786m9c9mfdgCopdHVaXqeGF8fuNC7rgFJ");
@@ -8,6 +10,19 @@ declare_id!("E22mM2hSBAb786m9c9mfdgCopdHVaXqeGF8fuNC7rgFJ");
 // Define the authorized signer's public key
 // This would typically be set during deployment
 pub const AUTHORIZED_SIGNER: Pubkey = pubkey!("HagTF73PcvgsKvTCjMyAw1TQi82TsurMrrduoME4aqEj");
+
+#[cfg(not(feature = "no-entrypoint"))]
+security_txt! {
+    name: "Dimitra Deforestation Protocol Log Memo Program",
+    project_url: "https://dimitra.io",
+    contacts: "email:security@dimitra.io",
+    policy: "https://github.com/DimitraAgTech/solana-programs/blob/main/SECURITY.md",
+    preferred_languages: "en",
+    source_code: "https://github.com/DimitraAgTech/solana-programs",
+    acknowledgements: "
+    We appreciate responsible disclosure of security issues.
+    "
+}
 
 #[program]
 pub mod dimitra_deforestation_protocol_log_memo {
