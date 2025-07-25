@@ -5,7 +5,7 @@ use solana_security_txt::security_txt;
 
 // This is your program's public key and it will update
 // automatically when you build the project.
-declare_id!("8wHFr9A9k9gfuSZjAYyfnu4r9A9hLF1BC8VqYLenVbes");
+declare_id!("2K4ZWngrtJCt1CEiggxfBag6h2jVP8V4Gp8Vc3wrDMqU");
 
 // Define the authorized signer's public key
 // This would typically be set during deployment

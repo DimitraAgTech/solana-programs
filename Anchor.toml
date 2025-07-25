@@ -6,7 +6,7 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-dimitra_cropyield_protocol_log_memo = "8wHFr9A9k9gfuSZjAYyfnu4r9A9hLF1BC8VqYLenVbes"
+dimitra_cropyield_protocol_log_memo = "2K4ZWngrtJCt1CEiggxfBag6h2jVP8V4Gp8Vc3wrDMqU"
 dimitra_deforestation_protocol_log_memo = "E22mM2hSBAb786m9c9mfdgCopdHVaXqeGF8fuNC7rgFJ"
 
 [registry]
